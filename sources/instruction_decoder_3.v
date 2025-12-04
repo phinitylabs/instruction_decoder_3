@@ -120,8 +120,8 @@ always @(*) begin : instruction_decoder
                         rsel        = 1'b0;
                         rce         = 1'b1;
                         cen         = 1'b0; 
-                        stack_re    = 1'b1; 
-                        pop         = 1'b1; 
+                        stack_re    = 1'b0; 
+                        pop         = 1'b0; 
                         a_mux_sel   = 2'b10; 
                         b_mux_sel   = 2'b00; 
                         oen         = 1'b1; 
