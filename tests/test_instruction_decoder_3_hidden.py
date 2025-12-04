@@ -42,10 +42,10 @@ async def test_id_disable(dut):
 
 
 # ------------------------------------------------------------
-# Helper: execute instruction with ID=010
+# Helper: execute instruction with ID=011
 # ------------------------------------------------------------
 async def run_instr(dut, instr, cc, en, expected, label):
-    dut.id.value = 0b010
+    dut.id.value = 0b011
     dut.instr_in.value = instr
     dut.cc_in.value = cc
     dut.instr_en.value = en
