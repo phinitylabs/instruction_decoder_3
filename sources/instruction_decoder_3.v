@@ -24,7 +24,7 @@ always @(*) begin : instruction_decoder
     // --------------------------------------
     // If ID != 011 → decoder is disabled
     // --------------------------------------
-    if (id != 3'b010) begin
+    if (id != 3'b011) begin
         rst         = 1'b0;
         out_ce      = 1'b0;
         rsel        = 1'b0; 
