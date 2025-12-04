@@ -106,7 +106,7 @@ always @(*) begin : instruction_decoder
                         stack_re    = 1'b1; 
                         pop         = 1'b1; 
                         a_mux_sel   = 2'b10; 
-                        b_mux_sel   = 2'b00; 
+                        b_mux_sel   = 2'b01; 
                         oen         = 1'b1; 
                         pc_mux_sel  = 1'b1; 
                         inc         = 1'b1; 
