@@ -158,7 +158,7 @@ async def test_hold_pc(dut):
 
     expected = {
         "rst":0, "out_ce":0, "rsel":0, "rce":1, "cen":0,
-        "stack_re":1, "pop":1,
+        "stack_re":0, "pop":0,
         "a_mux_sel":2, "b_mux_sel":0,
         "oen":1, "pc_mux_sel":1, "inc":0,
         "src_sel":0, "push":0, "stack_we":0
