@@ -19,7 +19,7 @@ async def check_outputs(dut, exp, label=""):
 
 
 # ------------------------------------------------------------
-# Test 0 – Decoder disabled when ID != 010
+# Test 0 – Decoder disabled when ID != 011
 # ------------------------------------------------------------
 @cocotb.test()
 async def test_id_disable(dut):
@@ -38,7 +38,7 @@ async def test_id_disable(dut):
         "src_sel":0, "push":0, "stack_we":0
     }
 
-    await check_outputs(dut, expected, "Decoder disabled (ID!=010)")
+    await check_outputs(dut, expected, "Decoder disabled (ID!=011)")
 
 
 # ------------------------------------------------------------
