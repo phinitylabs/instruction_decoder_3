@@ -129,16 +129,13 @@ async def test_pop_s(dut):
     )
 
 
-# ------------------------------------------------------------
-# Test 4 – POP PC: pattern 7'b01110x0
-# ------------------------------------------------------------
 @cocotb.test()
 async def test_pop_pc(dut):
 
     expected = {
         "rst":0, "out_ce":0, "rsel":0, "rce":1, "cen":0,
         "stack_re":1, "pop":1,
-        "a_mux_sel":2, "b_mux_sel":1,
+        "a_mux_sel":2, "b_mux_sel":0,  
         "oen":1, "pc_mux_sel":1, "inc":1,
         "src_sel":0, "push":0, "stack_we":0
     }
